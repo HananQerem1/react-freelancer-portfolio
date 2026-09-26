@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
 
 @theme {
     --color-primary:#ffffff;
@@ -13,7 +13,6 @@
 
     --breakpoint-xs: 29.375rem; 
 }
-
 @layer base {
     body{
         color: var(--color-primary);
@@ -30,15 +29,15 @@
         @apply text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px];
     }
      h1{
-        @apply capitalize xs:font-[550];
-        @apply text-[44px]  md:text-[64px];  
+        @apply uppercase font-semibold;
+        @apply text-[44px]  md:text-[54px];  
     }
     h2{
-        @apply capitalize;
-        @apply text-[20px] sm:text-[23px] md:text-[25px] lg:text-[27px] xl:text-[30px];
+        @apply uppercase font-semibold;
+        @apply text-[28px] md:text-[36px];
     }
     h3{
-        @apply capitalize;
+        @apply uppercase font-semibold;
         @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px];
     }
     a {
@@ -54,6 +53,12 @@
     }
     .column-center{
         @apply flex flex-col items-center text-center;
+    }
+    .grid-responsive-3{
+        @apply grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-7;
+    }
+    .card-img{
+        @apply rounded-2xl overflow-hidden;
     }
 }
 @layer components{
