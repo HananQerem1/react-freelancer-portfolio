@@ -1,9 +1,9 @@
 function Portfolio(){
     return <>
-        <div className="container column-center gap-4 pt-15 w-full">
+        <div className="container column-center gap-4 py-15 w-full">
             <div className="column-center gap-3 color-secondary w-full">
                 <h2 className="text-secondary">portfolio</h2>
-                <div className="center gap-1 xs:gap-3 w-[40%] xs:w-[30%] sm:w-[25%] lg:w-[20%] xl:w-[12%]">
+                <div className="center gap-1 xs:gap-3 w-[50%] xs:w-[45%] sm:w-[40%] lg:w-[35%] xl:w-[25%]">
                     <div className="h-1 bg-secondary w-full"></div>
                     <img src="./src/assets/icons/star.svg" className='size-6 xs:size-8'/>
                     <div className="h-1 bg-secondary w-full"></div>
