@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+    --color-primary:#ffffff;
+    --color-secondary:#2c3e50;
+
+    --color-bg:var(--color-secondary); 
+    --color-bg-secondary:#1abc9c;
+
+    --text-Montserrat: "Montserrat", sans-serif;
+    --text-Lato: "Lato", sans-serif;
+
+    --breakpoint-xs: 29.375rem; 
+}
+
+@layer base {
+    body{
+        color: var(--color-primary);
+        font-family: var(--text-Montserrat);
+    }
+    .container{
+        @apply mx-auto;
+    }
+    img{
+        @apply w-full block;
+    }
+    p{
+        @apply font-[Lato];
+        @apply text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px];
+    }
+     h1{
+        @apply capitalize xs:font-[550];
+        @apply text-[44px]  md:text-[64px];  
+    }
+    h2{
+        @apply capitalize;
+        @apply text-[20px] sm:text-[23px] md:text-[25px] lg:text-[27px] xl:text-[30px];
+    }
+    h3{
+        @apply capitalize;
+        @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px];
+    }
+    a {
+        @apply cursor-pointer uppercase font-semibold;
+    }
+}
+@layer utilities{
+    .row-between{
+        @apply flex justify-between items-center;
+    }
+    .center{
+        @apply flex items-center justify-center;
+    }
+    .column-center{
+        @apply flex flex-col items-center text-center;
+    }
+}
+@layer components{
+    .anchor{
+        @apply bg-bg-secondary py-2 px-3 xs:py-3 xs:px-4 rounded-2xl;
+    }
+}
