@@ -9,11 +9,11 @@ function Portfolio(){
                     <div className="h-1 bg-secondary w-full"></div>
                 </div>
             </div>
-            <div className="grid-responsive-3 xs:grid-cols-2">
+            <div className="card-grid">
                 <div className="card-img">
                     <img src="./src/assets/imgs/cabin.webp" />
                 </div>
-                <div className="card-img"v>
+                <div className="card-img">
                     <img src="./src/assets/imgs/cake.webp" />
                 </div>
                 <div className="card-img">

@@ -19,22 +19,22 @@ function Contact(){
                 className="flex flex-col gap-6 w-[80%] sm:w-[50%] "
             >
                 <TextField
-                    id="standard-multiline-flexible"
+                    id="full-name"
                     label="Full name"
                     variant="standard"
                 />
                  <TextField
-                    id="standard-multiline-flexible"
+                    id="email-address"
                     label="Email address"
                     variant="standard"
                 />
                  <TextField
-                    id="standard-multiline-flexible"
+                    id="phone-number"
                     label="Phone number"
                     variant="standard"
                 />
                  <TextField
-                    id="standard-multiline-flexible"
+                    id="message"
                     label="Message"
                     variant="standard"
                 />
