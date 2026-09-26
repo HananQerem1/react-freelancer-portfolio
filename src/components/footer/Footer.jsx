@@ -1,3 +1,8 @@
+import facebookIcon from "../../assets/icons/facebook.svg";
+import xIcon from "../../assets/icons/x.svg";
+import linkedinIcon from "../../assets/icons/linkedin.svg";
+import mediumIcon from "../../assets/icons/medium.svg";
+
 function Footer(){
     return<>
         <footer className=" column-center bg-bg w-full">
@@ -11,22 +16,22 @@ function Footer(){
                     <ul className="row-between gap-2">
                         <li>
                             <a className="anchor-border">
-                                <img src="./src/assets/icons/facebook.svg" />
+                                <img src={facebookIcon} />
                             </a>
                         </li>
                         <li>
                             <a className="anchor-border">
-                                <img src="./src/assets/icons/x.svg" />
+                                <img src={xIcon} />
                             </a>
                         </li>
                         <li>
                             <a className="anchor-border">
-                                <img src="./src/assets/icons/linkedin.svg" />
+                                <img src={linkedinIcon} />
                             </a>
                         </li>
                         <li>
                             <a className="anchor-border">
-                                <img src="./src/assets/icons/medium.svg" />
+                                <img src={mediumIcon} />
                             </a>
                         </li>
                     </ul>

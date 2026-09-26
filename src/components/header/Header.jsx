@@ -1,3 +1,5 @@
+import menuIcon from "../../assets/icons/menu.svg";
+
 function Header(){
     return <>
         <header className=' bg-bg py-3 px-1'>
@@ -8,7 +10,7 @@ function Header(){
                     <li><a className='hidden md:flex'>about</a></li>
                     <li><a className='hidden md:flex'>contact</a></li>
                     <li className='md:hidden'><a className='center gap-1 anchor'>
-                        <img src="./src/assets/icons/menu.svg" className='size-4'/>
+                        <img src={menuIcon} className='size-4'/>
                         </a>
                     </li>
                 </ul>
@@ -17,6 +19,3 @@ function Header(){
     </>
 }
 export default Header;
-
-
-
