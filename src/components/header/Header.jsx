@@ -1,6 +1,6 @@
 function Header(){
     return <>
-        <div className=' bg-bg py-3 px-1'>
+        <header className=' bg-bg py-3 px-1'>
             <div className='container row-between'>
                 <a className='text-[18px] md:text-[24px] lg:text-[28px]'>start bootstrap</a>
                 <ul className='center gap-7'>
@@ -13,7 +13,7 @@ function Header(){
                     </li>
                 </ul>
             </div>
-        </div>
+        </header>
     </>
 }
 export default Header;

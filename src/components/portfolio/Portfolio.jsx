@@ -1,6 +1,6 @@
 function Portfolio(){
     return <>
-        <div className="container column-center gap-4 py-15 w-full">
+        <section className="container column-center gap-10 py-15 w-full">
             <div className="column-center gap-3 color-secondary w-full">
                 <h2 className="text-secondary">portfolio</h2>
                 <div className="center gap-1 xs:gap-3 w-[50%] xs:w-[45%] sm:w-[40%] lg:w-[35%] xl:w-[25%]">
@@ -9,7 +9,7 @@ function Portfolio(){
                     <div className="h-1 bg-secondary w-full"></div>
                 </div>
             </div>
-            <div className="grid-responsive-3">
+            <div className="grid-responsive-3 xs:grid-cols-2">
                 <div className="card-img">
                     <img src="./src/assets/imgs/cabin.webp" />
                 </div>
@@ -29,7 +29,7 @@ function Portfolio(){
                     <img src="./src/assets/imgs/submarine.webp" />
                 </div>
             </div>
-        </div>
+        </section>
     </>
 }
 export default Portfolio;

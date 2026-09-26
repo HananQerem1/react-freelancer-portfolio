@@ -26,7 +26,7 @@
     }
     p{
         @apply font-[Lato];
-        @apply text-[14px] xs:text-[16px] sm:text-[20px];
+        @apply text-[14px] xs:text-[16px] sm:text-[18px];
     }
      h1{
         @apply uppercase font-semibold;
@@ -38,7 +38,7 @@
     }
     h3{
         @apply uppercase font-semibold;
-        @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px];
+        @apply text-[18px] md:text-[20px];
     }
     a {
         @apply cursor-pointer uppercase font-semibold;
@@ -55,14 +55,23 @@
         @apply flex flex-col items-center text-center;
     }
     .grid-responsive-3{
-        @apply grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-7;
+        @apply grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-7;
+    }
+    .grid-responsive-2{
+        @apply grid grid-cols-1 lg:grid-cols-2 gap-4;
     }
     .card-img{
         @apply rounded-xl overflow-hidden;
+    }
+    .button-border{
+        @apply border border-primary px-4 py-2 rounded-xl;
     }
 }
 @layer components{
     .anchor{
         @apply bg-bg-secondary py-2 px-3 xs:py-3 xs:px-4 rounded-2xl;
+    }
+    .anchor-border{
+        @apply flex size-10 border border-primary rounded-full p-2;
     }
 }
